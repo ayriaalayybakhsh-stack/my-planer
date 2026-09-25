@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>برنامه هفتگی آیریا</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        vazir: ["Vazirmatn", "sans-serif"],
+                    },
+
+                    colors: {
+                        night: "#0b0d12",
+                        panel: "#11141b",
+                        panel2: "#171b24",
+                        border: "#252a35",
+                        purple: "#9b87f5",
+                        lavender: "#c4b5fd",
+                        pink: "#f0abfc",
+                        blue: "#7dd3fc",
+                        green: "#86efac",
+                        yellow: "#fde68a",
+                        orange: "#fdba74",
+                    },
+
+                    boxShadow: {
+                        soft: "0 20px 60px rgba(0,0,0,.25)",
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-night text-white font-vazir min-h-screen">
+
+    <!-- Background decoration -->
+    <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+        <div class="absolute top-[-180px] right-[-120px] w-[400px] h-[400px] rounded-full bg-purple/10 blur-[120px]"></div>
+        <div class="absolute bottom-[-180px] left-[-100px] w-[400px] h-[400px] rounded-full bg-pink/10 blur-[120px]"></div>
+    </div>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="border-b border-border bg-night/80 backdrop-blur-xl sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="h-20 flex items-center justify-between">
+
+                <!-- Logo -->
+                <div class="flex items-center gap-3">
+
+                    <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-purple to-pink flex items-center justify-center shadow-lg shadow-purple/20">
+                        <span class="text-xl font-bold">A</span>
+                    </div>
+
+                    <div>
+                        <h1 class="font-bold text-lg">Ayria</h1>
+                        <p class="text-xs text-gray-500">Weekly Planner</p>
+                    </div>
+
+                </div>
+
+                <!-- Date -->
+                <div class="hidden sm:block text-left">
+                    <p class="text-xs text-gray-500">برنامه هفتگی</p>
+                    <p class="text-sm font-semibold text-gray-200">
+                        School • Skills • Life
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+
+        <!-- ================= HERO ================= -->
+
+        <section class="relative overflow-hidden rounded-[2rem] border border-border bg-gradient-to-br from-panel2 via-panel to-panel p-6 sm:p-10 shadow-soft mb-10">
+
+            <div class="absolute top-0 left-0 w-64 h-64 bg-purple/10 rounded-full blur-[90px]"></div>
+
+            <div class="relative">
+
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-purple/10 border border-purple/20 text-purple text-xs font-medium mb-5">
+                    <span class="w-2 h-2 rounded-full bg-purple"></span>
+                    برنامه شخصی آیریا
+                </div>
+
+                <div class="max-w-3xl">
+
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
+                        یک هفته برای
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple to-pink">
+                            ساختن آینده
+                        </span>
+                    </h2>
+
+                    <p class="mt-5 text-gray-400 leading-8 max-w-2xl text-sm sm:text-base">
+                        برنامه‌ای متعادل برای مدرسه، یادگیری مهارت‌های دیجیتال،
+                        زبان‌ها، ورزش، پروژه‌های شخصی و البته زمان کافی برای استراحت.
+                    </p>
+
+                </div>
+
+
+                <!-- Stats -->
+
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-8">
+
+                    <div class="rounded-2xl bg-white/[.03] border border-white/5 p-4">
+                        <p class="text-gray-500 text-xs">خواب</p>
+                        <p class="text-xl font-bold mt-1">23 → 07</p>
+                    </div>
+
+                    <div class="rounded-2xl bg-white/[.03] border border-white/5 p-4">
+                        <p class="text-gray-500 text-xs">باشگاه</p>
+                        <p class="text-xl font-bold mt-1">۳ روز</p>
+                    </div>
+
+                    <div class="rounded-2xl bg-white/[.03] border border-white/5 p-4">
+                        <p class="text-gray-500 text-xs">انگلیسی</p>
+                        <p class="text-xl font-bold mt-1">۳ جلسه</p>
+                    </div>
+
+                    <div class="rounded-2xl bg-white/[.03] border border-white/5 p-4">
+                        <p class="text-gray-500 text-xs">آلمانی</p>
+                        <p class="text-xl font-bold mt-1">۲ ساعت</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= LEGEND ================= -->
+
+        <section class="mb-8">
+
+            <div class="flex flex-wrap gap-2">
+
+                <span class="px-3 py-1.5 rounded-full bg-blue/10 text-blue text-xs border border-blue/10">
+                    🏫 مدرسه
+                </span>
+
+                <span class="px-3 py-1.5 rounded-full bg-orange/10 text-orange text-xs border border-orange/10">
+                    🥊 ورزش
+                </span>
+
+                <span class="px-3 py-1.5 rounded-full bg-purple/10 text-purple text-xs border border-purple/10">
+                    💻 فرانت‌اند
+                </span>
+
+                <span class="px-3 py-1.5 rounded-full bg-green/10 text-green text-xs border border-green/10">
+                    🇬🇧 انگلیسی
+                </span>
+
+                <span class="px-3 py-1.5 rounded-full bg-yellow/10 text-yellow text-xs border border-yellow/10">
+                    🇩🇪 آلمانی
+                </span>
+
+                <span class="px-3 py-1.5 rounded-full bg-pink/10 text-pink text-xs border border-pink/10">
+                    🎨 طراحی
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= WEEK ================= -->
+
+        <section>
+
+            <div class="flex items-end justify-between mb-6">
+
+                <div>
+                    <p class="text-purple text-sm font-semibold mb-1">
+                        WEEKLY SCHEDULE
+                    </p>
+
+                    <h2 class="text-2xl sm:text-3xl font-bold">
+                        برنامه روزانه
+                    </h2>
+                </div>
+
+                <div class="hidden sm:block text-xs text-gray-500">
+                    07:00 — 23:00
+                </div>
+
+            </div>
+
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+
+
+
+                <!-- ================= SATURDAY ================= -->
+
+                <article class="group rounded-3xl border border-border bg-panel overflow-hidden hover:border-purple/30 transition">
+
+                    <div class="p-5 border-b border-border bg-gradient-to-l from-purple/10 to-transparent">
+
+                        <div class="flex items-center justify-between">
+
+                            <div>
+                                <p class="text-xs text-purple font-semibold mb-1">
+                                    SATURDAY
+                                </p>
+
+                                <h3 class="text-xl font-bold">
+                                    شنبه
+                                </h3>
+                            </div>
+
+                            <div class="w-11 h-11 rounded-2xl bg-purple/10 flex items-center justify-center text-xl">
+                                🖥️
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="p-5 space-y-3">
+
+                        <div class="schedule-item">
+                            <span>07:00–07:30</span>
+                            <strong>صبحانه و آماده‌شدن</strong>
+                        </div>
+
+                        <div class="schedule-item blue">
+                            <span>07:30–14:00</span>
+                            <strong>🏫 مدرسه — عربی، علوم</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>14:00–14:30</span>
+                            <strong>رفتن به باشگاه</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>14:30–15:00</span>
+                            <strong>میان‌وعده و آماده‌شدن</strong>
+                        </div>
+
+                        <div class="schedule-item orange">
+                            <span>15:00–17:00</span>
+                            <strong>🥊 باشگاه / کیک‌بوکسینگ</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>17:00–17:30</span>
+                            <strong>رفتن مستقیم به کلاس</strong>
+                        </div>
+
+                        <div class="schedule-item purple">
+                            <span>18:00–20:00</span>
+                            <strong>💻 کلاس فرانت‌اند</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>20:00–21:00</span>
+                            <strong>برگشت + شام</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>21:00–21:30</span>
+                            <strong>مرور کوتاه کارهای مدرسه</strong>
+                        </div>
+
+                        <div class="schedule-item free">
+                            <span>21:30–23:00</span>
+                            <strong>🌙 زمان آزاد</strong>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ================= SUNDAY ================= -->
+
+                <article class="group rounded-3xl border border-border bg-panel overflow-hidden hover:border-green/30 transition">
+
+                    <div class="p-5 border-b border-border bg-gradient-to-l from-green/10 to-transparent">
+
+                        <div class="flex items-center justify-between">
+
+                            <div>
+                                <p class="text-xs text-green font-semibold mb-1">
+                                    SUNDAY
+                                </p>
+
+                                <h3 class="text-xl font-bold">
+                                    یکشنبه
+                                </h3>
+                            </div>
+
+                            <div class="w-11 h-11 rounded-2xl bg-green/10 flex items-center justify-center text-xl">
+                                🇬🇧
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="p-5 space-y-3">
+
+                        <div class="schedule-item">
+                            <span>07:00–07:30</span>
+                            <strong>صبحانه و آماده‌شدن</strong>
+                        </div>
+
+                        <div class="schedule-item blue">
+                            <span>07:30–13:00</span>
+                            <strong>🏫 مدرسه — ریاضی، فارسی</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>13:00–14:00</span>
+                            <strong>برگشت، ناهار و استراحت</strong>
+                        </div>
+
+                        <div class="schedule-item blue">
+                            <span>14:00–15:00</span>
+                            <strong>📚 تکالیف ریاضی و فارسی</strong>
+                        </div>
+
+                        <div class="schedule-item free">
+                            <span>15:00–15:30</span>
+                            <strong>استراحت</strong>
+                        </div>
+
+                        <div class="schedule-item green">
+                            <span>15:30–16:30</span>
+                            <strong>🇬🇧 تمرین انگلیسی</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>16:30–17:00</span>
+                            <strong>استراحت و آماده‌شدن</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>17:00–17:30</span>
+                            <strong>رفتن به کلاس</strong>
+                        </div>
+
+                        <div class="schedule-item green">
+                            <span>18:00–20:00</span>
+                            <strong>🇬🇧 کلاس انگلیسی</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>20:00–20:30</span>
+                            <strong>برگشت</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>20:30–21:30</span>
+                            <strong>شام + استراحت</strong>
+                        </div>
+
+                        <div class="schedule-item free">
+                            <span>21:30–23:00</span>
+                            <strong>🌙 زمان آزاد</strong>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ================= MONDAY ================= -->
+
+                <article class="group rounded-3xl border border-border bg-panel overflow-hidden hover:border-orange/30 transition">
+
+                    <div class="p-5 border-b border-border bg-gradient-to-l from-orange/10 to-transparent">
+
+                        <div class="flex items-center justify-between">
+
+                            <div>
+                                <p class="text-xs text-orange font-semibold mb-1">
+                                    MONDAY
+                                </p>
+
+                                <h3 class="text-xl font-bold">
+                                    دوشنبه
+                                </h3>
+                            </div>
+
+                            <div class="w-11 h-11 rounded-2xl bg-orange/10 flex items-center justify-center text-xl">
+                                🎬
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="p-5 space-y-3">
+
+                        <div class="schedule-item">
+                            <span>07:00–07:30</span>
+                            <strong>صبحانه</strong>
+                        </div>
+
+                        <div class="schedule-item blue">
+                            <span>07:30–14:00</span>
+                            <strong>🏫 مدرسه — علوم، مطالعات</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>14:00–14:30</span>
+                            <strong>رفتن به باشگاه</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>14:30–15:00</span>
+                            <strong>میان‌وعده + آماده‌شدن</strong>
+                        </div>
+
+                        <div class="schedule-item orange">
+                            <span>15:00–17:00</span>
+                            <strong>🥊 باشگاه</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>17:00–17:30</span>
+                            <strong>برگشت</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>17:30–18:30</span>
+                            <strong>دوش + غذا + استراحت</strong>
+                        </div>
+
+                        <div class="schedule-item blue">
+                            <span>18:30–19:30</span>
+                            <strong>📚 تکالیف علوم و مطالعات</strong>
+                        </div>
+
+                        <div class="schedule-item free">
+                            <span>19:30–20:00</span>
+                            <strong>استراحت</strong>
+                        </div>
+
+                        <div class="schedule-item pink">
+                            <span>20:00–21:00</span>
+                            <strong>🎬 آموزش پریمیر</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>21:00–21:30</span>
+                            <strong>شام</strong>
+                        </div>
+
+                        <div class="schedule-item free">
+                            <span>21:30–23:00</span>
+                            <strong>🌙 زمان آزاد</strong>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ================= TUESDAY ================= -->
+
+                <article class="group rounded-3xl border border-border bg-panel overflow-hidden hover:border-green/30 transition">
+
+                    <div class="p-5 border-b border-border bg-gradient-to-l from-green/10 to-transparent">
+
+                        <div class="flex items-center justify-between">
+
+                            <div>
+                                <p class="text-xs text-green font-semibold mb-1">
+                                    TUESDAY
+                                </p>
+
+                                <h3 class="text-xl font-bold">
+                                    سه‌شنبه
+                                </h3>
+                            </div>
+
+                            <div class="w-11 h-11 rounded-2xl bg-green/10 flex items-center justify-center text-xl">
+                                💻
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="p-5 space-y-3">
+
+                        <div class="schedule-item">
+                            <span>07:00–07:30</span>
+                            <strong>صبحانه</strong>
+                        </div>
+
+                        <div class="schedule-item blue">
+                            <span>07:30–14:00</span>
+                            <strong>🏫 مدرسه — دینی، ریاضی</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>14:00–14:30</span>
+                            <strong>ناهار + استراحت</strong>
+                        </div>
+
+                        <div class="schedule-item blue">
+                            <span>14:30–15:30</span>
+                            <strong>📚 تکالیف دینی و ریاضی</strong>
+                        </div>
+
+                        <div class="schedule-item free">
+                            <span>15:30–16:00</span>
+                            <strong>استراحت</strong>
+                        </div>
+
+                        <div class="schedule-item pink">
+                            <span>16:00–17:00</span>
+                            <strong>🎬 اجرای پروژه پریمیر</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>17:00–17:30</span>
+                            <strong>آماده‌شدن</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>17:30–18:00</span>
+                            <strong>رفتن به کلاس</strong>
+                        </div>
+
+                        <div class="schedule-item green">
+                            <span>18:00–20:00</span>
+                            <strong>🇬🇧 کلاس انگلیسی</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>20:00–20:30</span>
+                            <strong>برگشت</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>20:30–21:30</span>
+                            <strong>شام + استراحت</strong>
+                        </div>
+
+                        <div class="schedule-item free">
+                            <span>21:30–23:00</span>
+                            <strong>🌙 زمان آزاد</strong>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ================= WEDNESDAY ================= -->
+
+                <article class="group rounded-3xl border border-border bg-panel overflow-hidden hover:border-orange/30 transition">
+
+                    <div class="p-5 border-b border-border bg-gradient-to-l from-orange/10 to-transparent">
+
+                        <div class="flex items-center justify-between">
+
+                            <div>
+                                <p class="text-xs text-orange font-semibold mb-1">
+                                    WEDNESDAY
+                                </p>
+
+                                <h3 class="text-xl font-bold">
+                                    چهارشنبه
+                                </h3>
+                            </div>
+
+                            <div class="w-11 h-11 rounded-2xl bg-orange/10 flex items-center justify-center text-xl">
+                                🥊
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="p-5 space-y-3">
+
+                        <div class="schedule-item">
+                            <span>07:00–07:30</span>
+                            <strong>صبحانه</strong>
+                        </div>
+
+                        <div class="schedule-item blue">
+                            <span>07:30–13:00</span>
+                            <strong>🏫 مدرسه — دفاعی، مطالعات</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>13:00–14:00</span>
+                            <strong>برگشت + ناهار</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>14:00–14:30</span>
+                            <strong>استراحت + آماده‌شدن</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>14:30–15:00</span>
+                            <strong>رفتن به باشگاه</strong>
+                        </div>
+
+                        <div class="schedule-item orange">
+                            <span>15:00–17:00</span>
+                            <strong>🥊 باشگاه</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>17:00–17:30</span>
+                            <strong>برگشت</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>17:30–18:30</span>
+                            <strong>دوش + غذا + استراحت</strong>
+                        </div>
+
+                        <div class="schedule-item pink">
+                            <span>18:30–19:30</span>
+                            <strong>🎬 تکمیل و ارسال تکلیف پریمیر</strong>
+                        </div>
+
+                        <div class="schedule-item blue">
+                            <span>20:00–21:00</span>
+                            <strong>📚 تکالیف دفاعی و مطالعات</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>21:00–21:30</span>
+                            <strong>شام</strong>
+                        </div>
+
+                        <div class="schedule-item free">
+                            <span>21:30–23:00</span>
+                            <strong>🌙 زمان آزاد</strong>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ================= THURSDAY ================= -->
+
+                <article class="group rounded-3xl border border-border bg-panel overflow-hidden hover:border-pink/30 transition">
+
+                    <div class="p-5 border-b border-border bg-gradient-to-l from-pink/10 to-transparent">
+
+                        <div class="flex items-center justify-between">
+
+                            <div>
+                                <p class="text-xs text-pink font-semibold mb-1">
+                                    THURSDAY
+                                </p>
+
+                                <h3 class="text-xl font-bold">
+                                    پنجشنبه
+                                </h3>
+                            </div>
+
+                            <div class="w-11 h-11 rounded-2xl bg-pink/10 flex items-center justify-center text-xl">
+                                🎨
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="p-5 space-y-3">
+
+                        <div class="schedule-item">
+                            <span>07:00–07:30</span>
+                            <strong>صبحانه</strong>
+                        </div>
+
+                        <div class="schedule-item purple">
+                            <span>08:00–09:30</span>
+                            <strong>🖥️ پروژه Figma</strong>
+                        </div>
+
+                        <div class="schedule-item free">
+                            <span>09:30–10:00</span>
+                            <strong>استراحت</strong>
+                        </div>
+
+                        <div class="schedule-item green">
+                            <span>10:00–11:00</span>
+                            <strong>🇬🇧 تمرین انگلیسی</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>11:00–11:30</span>
+                            <strong>آماده‌شدن + رفتن به کلاس</strong>
+                        </div>
+
+                        <div class="schedule-item green">
+                            <span>12:00–13:30</span>
+                            <strong>🇬🇧 کلاس انگلیسی</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>13:30–14:00</span>
+                            <strong>برگشت</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>14:00–14:30</span>
+                            <strong>ناهار + استراحت</strong>
+                        </div>
+
+                        <div class="schedule-item yellow">
+                            <span>14:30–16:00</span>
+                            <strong>🇩🇪 آلمانی</strong>
+                        </div>
+
+                        <div class="schedule-item free">
+                            <span>16:00–16:30</span>
+                            <strong>استراحت</strong>
+                        </div>
+
+                        <div class="schedule-item pink">
+                            <span>16:30–17:30</span>
+                            <strong>🎬 آموزش پریمیر</strong>
+                        </div>
+
+                        <div class="schedule-item free">
+                            <span>17:30–18:00</span>
+                            <strong>استراحت</strong>
+                        </div>
+
+                        <div class="schedule-item pink">
+                            <span>18:00–19:00</span>
+                            <strong>🎨 آموزش فتوشاپ</strong>
+                        </div>
+
+                        <div class="schedule-item free">
+                            <span>19:00–20:30</span>
+                            <strong>🌿 زمان آزاد</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>20:30–21:30</span>
+                            <strong>شام</strong>
+                        </div>
+
+                        <div class="schedule-item free">
+                            <span>21:30–23:00</span>
+                            <strong>🌙 زمان آزاد</strong>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ================= FRIDAY ================= -->
+
+                <article class="group rounded-3xl border border-border bg-panel overflow-hidden hover:border-purple/30 transition">
+
+                    <div class="p-5 border-b border-border bg-gradient-to-l from-purple/10 to-transparent">
+
+                        <div class="flex items-center justify-between">
+
+                            <div>
+                                <p class="text-xs text-purple font-semibold mb-1">
+                                    FRIDAY
+                                </p>
+
+                                <h3 class="text-xl font-bold">
+                                    جمعه
+                                </h3>
+                            </div>
+
+                            <div class="w-11 h-11 rounded-2xl bg-purple/10 flex items-center justify-center text-xl">
+                                ✦
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="p-5 space-y-3">
+
+                        <div class="schedule-item">
+                            <span>07:00–08:00</span>
+                            <strong>بیداری + صبحانه</strong>
+                        </div>
+
+                        <div class="schedule-item blue">
+                            <span>08:00–09:00</span>
+                            <strong>📚 مرور هفتگی درس‌ها</strong>
+                        </div>
+
+                        <div class="schedule-item free">
+                            <span>09:00–09:30</span>
+                            <strong>استراحت</strong>
+                        </div>
+
+                        <div class="schedule-item purple">
+                            <span>09:30–11:00</span>
+                            <strong>💻 JavaScript + تسک هفتگی</strong>
+                        </div>
+
+                        <div class="schedule-item free">
+                            <span>11:00–11:30</span>
+                            <strong>استراحت</strong>
+                        </div>
+
+                        <div class="schedule-item yellow">
+                            <span>11:30–12:00</span>
+                            <strong>🇩🇪 آلمانی</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>12:00–13:30</span>
+                            <strong>ناهار + استراحت</strong>
+                        </div>
+
+                        <div class="schedule-item pink">
+                            <span>13:30–15:00</span>
+                            <strong>🖥️ ادامه پروژه Figma</strong>
+                        </div>
+
+                        <div class="schedule-item free">
+                            <span>15:00–16:00</span>
+                            <strong>🌿 استراحت و سرگرمی</strong>
+                        </div>
+
+                        <div class="schedule-item pink">
+                            <span>16:00–17:00</span>
+                            <strong>🎨 تمرین عملی فتوشاپ</strong>
+                        </div>
+
+                        <div class="schedule-item purple">
+                            <span>17:00–18:00</span>
+                            <strong>💻 پروژه وب‌سایت / رفع اشکال</strong>
+                        </div>
+
+                        <div class="schedule-item free">
+                            <span>18:00–19:30</span>
+                            <strong>🌿 زمان آزاد</strong>
+                        </div>
+
+                        <div class="schedule-item">
+                            <span>19:30–20:00</span>
+                            <strong>بررسی کارهای عقب‌افتاده</strong>
+                        </div>
+
+                        <div class="schedule-item free">
+                            <span>20:00–23:00</span>
+                            <strong>🌙 شام + سرگرمی + استراحت</strong>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= WEEKLY SKILLS ================= -->
+
+        <section class="mt-12">
+
+            <div class="mb-6">
+
+                <p class="text-purple text-sm font-semibold mb-1">
+                    WEEKLY FOCUS
+                </p>
+
+                <h2 class="text-2xl sm:text-3xl font-bold">
+                    تمرکزهای این هفته
+                </h2>
+
+            </div>
+
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+
+                <div class="rounded-3xl border border-border bg-panel p-5">
+
+                    <div class="w-11 h-11 rounded-2xl bg-purple/10 flex items-center justify-center mb-4">
+                        💻
+                    </div>
+
+                    <h3 class="font-bold mb-2">
+                        Frontend
+                    </h3>
+
+                    <p class="text-sm text-gray-500 leading-7">
+                        کلاس فرانت‌اند، پروژه وب‌سایت و تمرین JavaScript
+                    </p>
+
+                </div>
+
+
+                <div class="rounded-3xl border border-border bg-panel p-5">
+
+                    <div class="w-11 h-11 rounded-2xl bg-pink/10 flex items-center justify-center mb-4">
+                        🎨
+                    </div>
+
+                    <h3 class="font-bold mb-2">
+                        Design
+                    </h3>
+
+                    <p class="text-sm text-gray-500 leading-7">
+                        Photoshop و ادامه پروژه طراحی رابط در Figma
+                    </p>
+
+                </div>
+
+
+                <div class="rounded-3xl border border-border bg-panel p-5">
+
+                    <div class="w-11 h-11 rounded-2xl bg-yellow/10 flex items-center justify-center mb-4">
+                        🇩🇪
+                    </div>
+
+                    <h3 class="font-bold mb-2">
+                        Languages
+                    </h3>
+
+                    <p class="text-sm text-gray-500 leading-7">
+                        انگلیسی سه جلسه و آلمانی دو ساعت در هفته
+                    </p>
+
+                </div>
+
+
+                <div class="rounded-3xl border border-border bg-panel p-5">
+
+                    <div class="w-11 h-11 rounded-2xl bg-orange/10 flex items-center justify-center mb-4">
+                        🥊
+                    </div>
+
+                    <h3 class="font-bold mb-2">
+                        Balance
+                    </h3>
+
+                    <p class="text-sm text-gray-500 leading-7">
+                        سه جلسه باشگاه، خواب منظم و زمان آزاد
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= PRIORITY ================= -->
+
+        <section class="mt-12 rounded-3xl border border-border bg-panel p-6 sm:p-8">
+
+            <div class="flex items-start gap-4">
+
+                <div class="w-12 h-12 shrink-0 rounded-2xl bg-purple/10 flex items-center justify-center text-xl">
+                    ✦
+                </div>
+
+                <div>
+
+                    <h2 class="font-bold text-xl mb-3">
+                        قانون روزهای شلوغ
+                    </h2>
+
+                    <p class="text-gray-400 text-sm leading-8">
+                        اگر یک روز خسته بودی یا تکالیف مدرسه زیاد شد،
+                        لازم نیست همهٔ برنامه را انجام بدهی.
+                        اولویت با خواب و استراحت، تکالیف دارای موعد تحویل،
+                        کلاس‌های ثابت و سپس پروژه‌های شخصی است.
+                        کارهایی مثل Figma، Photoshop یا تمرین اضافه فرانت‌اند
+                        را می‌توان به جمعه منتقل کرد.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="border-t border-border mt-16">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+
+                <div>
+
+                    <p class="font-bold">
+                        Ayria
+                    </p>
+
+                    <p class="text-xs text-gray-500 mt-1">
+                        Learn. Create. Grow.
+                    </p>
+
+                </div>
+
+                <p class="text-xs text-gray-600">
+                    Weekly Planner • Personal Edition
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ================= CUSTOM TAILWIND COMPONENTS ================= -->
+
+    <style>
+
+        .schedule-item {
+            @apply flex items-center justify-between gap-4 rounded-2xl
+                   bg-white/[0.025] border border-white/[0.04]
+                   px-4 py-3 transition duration-200;
+        }
+
+        .schedule-item:hover {
+            @apply bg-white/[0.05] border-white/[0.08] -translate-y-[1px];
+        }
+
+        .schedule-item span {
+            @apply text-[11px] sm:text-xs text-gray-500 whitespace-nowrap;
+        }
+
+        .schedule-item strong {
+            @apply text-xs sm:text-sm font-medium text-gray-300;
+        }
+
+        .schedule-item.blue {
+            @apply bg-blue/[0.06] border-blue/[0.10];
+        }
+
+        .schedule-item.blue strong {
+            @apply text-blue;
+        }
+
+        .schedule-item.orange {
+            @apply bg-orange/[0.06] border-orange/[0.10];
+        }
+
+        .schedule-item.orange strong {
+            @apply text-orange;
+        }
+
+        .schedule-item.purple {
+            @apply bg-purple/[0.06] border-purple/[0.10];
+        }
+
+        .schedule-item.purple strong {
+            @apply text-purple;
+        }
+
+        .schedule-item.green {
+            @apply bg-green/[0.06] border-green/[0.10];
+        }
+
+        .schedule-item.green strong {
+            @apply text-green;
+        }
+
+        .schedule-item.yellow {
+            @apply bg-yellow/[0.06] border-yellow/[0.10];
+        }
+
+        .schedule-item.yellow strong {
+            @apply text-yellow;
+        }
+
+        .schedule-item.pink {
+            @apply bg-pink/[0.06] border-pink/[0.10];
+        }
+
+        .schedule-item.pink strong {
+            @apply text-pink;
+        }
+
+        .schedule-item.free strong {
+            @apply text-gray-400;
+        }
+
+    </style>
+
+</body>
+</html>
